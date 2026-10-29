@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Synthetic fixture for the Arbiter live suite (ARB-318, PLAN-194 D6). -->
+  <PropertyGroup><TargetFramework>net8.0</TargetFramework></PropertyGroup>
+  <ItemGroup><PackageReference Include="Newtonsoft.Json" Version="13.0.1" /></ItemGroup>
+</Project>

@@ -1,0 +1,12 @@
+name: dependency-check
+# PLAN-194-R2 D1/D4 (ARB-318): an ordinary check that shares the trusted check's name and always passes. Arbiter must
+# never count it for the trusted entry. Synthetic fixture: no real code or data.
+on:
+  pull_request:
+    branches: [main]
+permissions: {}
+jobs:
+  dependency-check:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "synthetic ordinary dependency-check for the Arbiter live suite"
